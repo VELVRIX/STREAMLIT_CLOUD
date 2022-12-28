@@ -6,6 +6,7 @@
 ## Demo
 Here is a working live demo :  https://velvrix-streamlit-cloud-app-f0lmlu.streamlit.app/
 
-## Hugging Face : https://huggingface.co/velvrix/truefoundary_sentimental_RoBERTa
+## Hugging Face 
+Model link : https://huggingface.co/velvrix/truefoundary_sentimental_RoBERTa
 
 

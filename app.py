@@ -22,8 +22,8 @@ tokenizer,model = get_model()
 
 st.title('Sentiment analyzer - Negativly Biased')
 
-#user_input = st.text_area('Enter Text to Analyze')
-user_input = st.subheader('Enter Text to Analyze')
+user_input = st.text_area('Enter Text to Analyze')
+
 button = st.button("Analyze")
 
 d = {

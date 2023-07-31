@@ -8,7 +8,8 @@ import tensorflow as tf
 # Suppressing scientific notation
 np.set_printoptions(suppress=True)
 
-@st.cache(allow_output_mutation=True)
+#@st.cache(allow_output_mutation=True) # st.cache is now deprecated 
+@st.cache_resource
 def get_model():
     model_x = AutoModelForSequenceClassification.from_pretrained("velvrix/truefoundary_sentimental_RoBERTa")
     tokenizer_x = AutoTokenizer.from_pretrained("velvrix/truefoundary_sentimental_RoBERTa")

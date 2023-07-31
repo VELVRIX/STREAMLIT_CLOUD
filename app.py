@@ -55,7 +55,7 @@ st.divider()
 st.divider()
 
 '''
-* ``Try new Multi-Class Classification model`` -> 3 different class with Positive, Neutral and Negative sentiments.
+* ``Try new Multi-Class Classification model`` -> 3 different class with Positive, Neutral and Negative sentiments : https://huggingface.co/velvrix/RoBERTA_pipeiq
 '''
 
 

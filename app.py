@@ -39,11 +39,6 @@ if user_input and button :
     st.write("Prediction: ",d[y_pred[0]])
 
 
-code = '''def hello():
-    print("Hello, Streamlit!")'''
-st.code(code, language='python')
-
-
 '''
 * This model is fine tunned version of RoBERTa-base & has a MCC score of 0.86.
 
@@ -52,3 +47,9 @@ st.code(code, language='python')
 * ``st.cache is now deprecated`` -> Ignore this warning! ⚠ required changes are already done in the code snippet, taking time to reflect in front.
 '''
 
+code = '''#@st.cache(allow_output_mutation=True) # st.cache is now deprecated 
+@st.cache_resource
+def get_model():
+    model_x = AutoModelForSequenceClassification.from_pretrained("velvrix/truefoundary_sentimental_RoBERTa")
+    tokenizer_x = AutoTokenizer.from_pretrained("velvrix/truefoundary_sentimental_RoBERTa")'''
+st.code(code, language='python')

@@ -46,5 +46,7 @@ if user_input and button :
 * This model is fine tunned version of RoBERTa-base & has a MCC score of 0.86.
 
 * model can be accessed from Hugging Face : https://huggingface.co/velvrix/truefoundary_sentimental_RoBERTa
+
+* ``st.cache is now deprecated`` -> Ignore this warning! ⚠ required changes are already done in the code snippet, taking time to reflect in front.
 '''
 

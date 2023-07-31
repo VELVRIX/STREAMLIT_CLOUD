@@ -39,7 +39,9 @@ if user_input and button :
     st.write("Prediction: ",d[y_pred[0]])
 
 
-
+code = '''def hello():
+    print("Hello, Streamlit!")'''
+@st.code(code, language='python')
 
 
 '''

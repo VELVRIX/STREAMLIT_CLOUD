@@ -20,7 +20,8 @@ def get_model():
 
 tokenizer,model = get_model()
 
-st.title('Sentiment analyzer - Negativly Biased')
+st.title('Sentiment analyzer')
+st.caption('This classifier is Negativly Biased.')
 
 user_input = st.text_area('Enter Text to Analyze')
 
@@ -54,17 +55,11 @@ st.divider()
 st.divider()
 
 '''
-* ``st.cache is now deprecated`` -> Ignore this warning! ⚠ required changes are already done in the code snippet.
+* ``Try new Multi-Class Classification model`` -> 3 different class with Positive, Neutral and Negative sentiments.
 '''
 
-code = '''#@st.cache(allow_output_mutation=True) # st.cache is now deprecated 
-@st.cache_resource
-def get_model():
-    model_x = AutoModelForSequenceClassification.from_pretrained("velvrix/truefoundary_sentimental_RoBERTa")
-    tokenizer_x = AutoTokenizer.from_pretrained("velvrix/truefoundary_sentimental_RoBERTa")'''
-st.code(code, language='python')
 
 
 image = Image.open('Screenshot 2023-07-31 183620.jpg')
 
-st.image(image, caption='Sunrise by the mountains')
+st.image(image, caption='Multi-Class Classification Unbiased model')

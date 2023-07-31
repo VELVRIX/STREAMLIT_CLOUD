@@ -1,6 +1,8 @@
 # SENTIMENT ANALYSIS
 
-![Screenshot (8)](https://user-images.githubusercontent.com/86217421/209843388-ed646334-b758-497e-a47b-c87a92156142.png)
+
+![image](https://github.com/VELVRIX/STREAMLIT_CLOUD/assets/86217421/82dbf12e-7380-4471-bae8-5fcde9767483)
+
 
 
 ## Demo

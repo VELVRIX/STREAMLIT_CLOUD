@@ -3,7 +3,7 @@ import numpy as np
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, TrainingArguments, Trainer
 import torch
 import tensorflow as tf
-
+from PIL import Image
 
 # Suppressing scientific notation
 np.set_printoptions(suppress=True)
@@ -63,3 +63,8 @@ def get_model():
     model_x = AutoModelForSequenceClassification.from_pretrained("velvrix/truefoundary_sentimental_RoBERTa")
     tokenizer_x = AutoTokenizer.from_pretrained("velvrix/truefoundary_sentimental_RoBERTa")'''
 st.code(code, language='python')
+
+
+image = Image.open('Screenshot 2023-07-31 183620.jpg')
+
+st.image(image, caption='Sunrise by the mountains')

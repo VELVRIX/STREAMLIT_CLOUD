@@ -8,6 +8,8 @@ import tensorflow as tf
 # Suppressing scientific notation
 np.set_printoptions(suppress=True)
 
+st.title('Sentiment analyzer - Negativly Biased')
+
 #@st.cache(allow_output_mutation=True) # st.cache is now deprecated 
 @st.cache_resource
 def get_model():
@@ -18,7 +20,8 @@ def get_model():
 
 tokenizer,model = get_model()
 
-user_input = st.text_area('Enter Text to Analyze')
+#user_input = st.text_area('Enter Text to Analyze')
+user_input = st.subheader('Enter Text to Analyze')
 button = st.button("Analyze")
 
 d = {
@@ -38,13 +41,18 @@ if user_input and button :
     y_pred = np.argmax(output.logits.detach().numpy(),axis=1)
     st.write("Prediction: ",d[y_pred[0]])
 
+st.divider()
 
 '''
 * This model is fine tunned version of RoBERTa-base & has a MCC score of 0.86.
 
 * model can be accessed from Hugging Face : https://huggingface.co/velvrix/truefoundary_sentimental_RoBERTa
+'''
 
-* ``st.cache is now deprecated`` -> Ignore this warning! ⚠ required changes are already done in the code snippet, taking time to reflect in front.
+st.divider()
+
+'''
+* ``st.cache is now deprecated`` -> Ignore this warning! ⚠ required changes are already done in the code snippet.
 '''
 
 code = '''#@st.cache(allow_output_mutation=True) # st.cache is now deprecated 
